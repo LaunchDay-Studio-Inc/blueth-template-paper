@@ -1,0 +1,8 @@
+name: BluethTemplate
+version: "${version}"
+main: online.blueth.template.BluethPlugin
+description: Blueth Plugin Template
+api-version: "1.21"
+author: LaunchDay Studio
+website: https://blueth.online
+load: POSTWORLD

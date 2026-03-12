@@ -1,0 +1,29 @@
+{
+  "name": "Blueth Paper Plugin Dev",
+  "image": "mcr.microsoft.com/devcontainers/java:21-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "postCreateCommand": "./gradlew --version",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "vscjava.vscode-gradle",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-test",
+        "vscjava.vscode-java-dependency",
+        "eamodio.gitlens"
+      ],
+      "settings": {
+        "java.configuration.runtimes": [
+          {
+            "name": "JavaSE-21",
+            "default": true
+          }
+        ]
+      }
+    }
+  },
+  "forwardPorts": [25565, 19132]
+}
